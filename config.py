@@ -12,17 +12,18 @@ load_dotenv()
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("7064273182:AAHPtqoAGpEw1revx2I__Ru0YCZC_QZfztU")
+BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ITZ_IND_CODER")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "DevilXmusicrobot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "IDK")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "DEVIL")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "IDK")
 # ---------------------------------------------------------
-# ---------------------------------------------------------
+
+
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -34,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002114104208))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002095855229))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 6648419852))
+OWNER_ID = int(getenv("OWNER_ID", 7109918450))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -52,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/INDIANCODERS-1/SHUKLA-MUSIC",
+    "https://github.com/Bhola116/SHUKLA-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -66,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/INDIAN_CODER_CC_GIVEAWAY")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/the_ind_coders")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/crunchyrollanimeinhindidubb")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Team_Shadow_Group")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -140,13 +141,13 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/7063e3b0eac98dcc5734e.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/d4858e03a379df198743f.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/35f71c3ebde68a5d7fc23.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/181715eb83d6b2dc4c1a1.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/3e8be4617f67d7369b44a.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/14629ef7e8fb8115016ad.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/ed0b0c4bdba0e5edae53c.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/181715eb83d6b2dc4c1a1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/35f71c3ebde68a5d7fc23.jpg"
