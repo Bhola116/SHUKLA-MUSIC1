@@ -28,7 +28,7 @@ from strings import get_string
 
 
 YUMI_PICS = [
-"https://telegra.ph/file/ffcae050bc00adf65ecaf.jpg",
+"https://telegra.ph/file/65ba9b04fd3c4aa4fed57.mp4",
 
 ]
 
@@ -42,7 +42,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            return await message.reply_photo(
+            return await message.reply_video(
                 random.choice(YUMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
@@ -97,7 +97,7 @@ async def start_pm(client, message: Message, _):
         served_chats = len(await get_served_chats())
         served_users = len(await get_served_users())
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_photo(
+        await message.reply_video(
             random.choice(YUMI_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
             reply_markup=InlineKeyboardMarkup(out),
@@ -114,7 +114,7 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_photo(
+    await message.reply_video(
         random.choice(YUMI_PICS),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
@@ -149,13 +149,20 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_photo(
+                await message.reply_video(
                     random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,
                         message.chat.title,
                         app.mention,
+                    ),
+                    reply_markup=InlineKeyboardMarkup(out),
+                )
+                await add_served_chat(message.chat.id)
+                await message.stop_propagation()
+        except Exception as ex:
+            print(ex)   app.mention,
                     ),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
